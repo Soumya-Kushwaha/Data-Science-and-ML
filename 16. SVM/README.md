@@ -1,3 +1,5 @@
+# Support Vector Machine
+
 The **Support Vector Machine** is a **supervised learning algorithm** mostly used for **classification** but it can be used also for **regression.** The main idea is that based on the labeled data (training data) the algorithm tries to find the **optimal hyperplane** which can be used to classify new data points. In two dimensions the hyperplane is a simple line.
 
 Usually a learning algorithm tries to learn the **most common characteristics (what differentiates one class from another)** of a class and the classification is based on those representative characteristics learnt (so classification is based on differences between classes). The **SVM** works in the other way around. It finds the **most similar examples** between classes. Those will be the **support vectors.**
@@ -83,7 +85,8 @@ The **Regularization Parameter (in python it’s called C)** tells the SVM optim
 If the **C is highe**r, the optimization will choose **smaller margin** hyperplane, so training data **misclassification rate will be lower**.
 
 On the other hand, if the **C is low**, then the **margin will be big**, even if there **will be misclassified** training data examples. This is shown in the following two diagrams:
-![image](https://user-images.githubusercontent.com/87495134/216515200-1211a7c4-1451-4cbf-a17a-fea1500fdd36.png) ![image](https://user-images.githubusercontent.com/87495134/216515205-984dce84-6f97-4700-9c6d-3f92eb0b3297.png)
+![image](https://user-images.githubusercontent.com/87495134/216515200-1211a7c4-1451-4cbf-a17a-fea1500fdd36.png) 
+![image](https://user-images.githubusercontent.com/87495134/216515205-984dce84-6f97-4700-9c6d-3f92eb0b3297.png)
 
 
 
@@ -91,7 +94,8 @@ As you can see in the image, when the C is low, the margin is higher (so implici
 
 ## Gamma
 The next important parameter is **Gamma**. The gamma parameter defines **how far the influence of a single training example reaches**. This means that **high Gamma** will consider only **points close to the plausible hyperplane** and **low Gamma** will consider **points at greater distance.**
-![image](https://user-images.githubusercontent.com/87495134/216515462-edce4dfa-cf12-4ee9-8f50-2c3cfdb70675.png) ![image](https://user-images.githubusercontent.com/87495134/216515476-60e017b4-7bc2-441a-9209-b4f10c15e80e.png)
+![image](https://user-images.githubusercontent.com/87495134/216515462-edce4dfa-cf12-4ee9-8f50-2c3cfdb70675.png) 
+![image](https://user-images.githubusercontent.com/87495134/216515476-60e017b4-7bc2-441a-9209-b4f10c15e80e.png)
 
 As you can see, decreasing the Gamma will result that finding the correct hyperplane will consider points at greater distances so more and more points will be used (green lines indicates which points were considered when finding the optimal hyperplane).
 
