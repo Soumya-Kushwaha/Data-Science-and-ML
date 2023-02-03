@@ -61,9 +61,11 @@ To solve this problem we **shouldn’t just blindly add another dimension**, we 
 Let's assume that we add another dimension called **X3**. Another important transformation is that in the new dimension the points are organized using this formula **x1² + x2²**.
 
 If we plot the plane defined by the x² + y² formula, we will get something like this:
+
 ![image](https://user-images.githubusercontent.com/87495134/216514639-b817525f-05bc-4dea-ba85-edc8955c648c.png)
 
 Now we have to map the apples and lemons (which are just simple points) to this new space. Think about it carefully, what did we do? We just used a transformation in which **we added levels based on distance**. If you are in the origin, then the points will be on the lowest level. As we move away from the origin, it means that we are **climbing the hill** (moving from the center of the plane towards the margins) so the level of the points will be higher. Now if we consider that the origin is the lemon from the center, we will have something like this:
+
 ![image](https://user-images.githubusercontent.com/87495134/216514709-bad74755-4d8e-40bb-81bb-5201b6143a01.png)
 
 Now we can easily separate the two classes. These transformations are called **kernels**. Popular kernels are: **Polynomial Kernel, Gaussian Kernel, Radial Basis Function (RBF), Laplace RBF Kernel, Sigmoid Kernel, Anove RBF Kernel**, etc (see Kernel Functions or a more detailed description Machine Learning Kernels).
